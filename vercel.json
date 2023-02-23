@@ -6,7 +6,7 @@
       },
       {
         "src": "src/views/**/*.handlebars",
-        "use": "handlebars-precompile"
+        "use": "handlebars"
       }
     ],
     "routes": [
