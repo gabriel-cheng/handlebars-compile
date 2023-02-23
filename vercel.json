@@ -3,10 +3,6 @@
       {
         "src": "src/index.js",
         "use": "@vercel/node"
-      },
-      {
-        "src": "src/views/**/*.handlebars",
-        "use": "handlebars"
       }
     ],
     "routes": [
