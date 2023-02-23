@@ -10,7 +10,6 @@
   },
   "scripts": {
     "dev": "nodemon ./src/index.js",
-    "prebuild": "rm -rf dist && mkdir dist",
     "build": "handlebars src/views/ -f dist/templates.js",
     "start": "node index.js"
   }
