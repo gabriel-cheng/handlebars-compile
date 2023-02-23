@@ -2,6 +2,7 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const router = require("./router/index.router");
 const path = require("path");
+const templates = require("../dist/templates");
 const app = express();
 
 app.use(express.static("public"));

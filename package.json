@@ -5,10 +5,13 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^6.0.7"
+    "express-handlebars": "^6.0.7",
+    "handlebars": "^4.7.7"
   },
   "scripts": {
     "dev": "nodemon ./src/index.js",
-    "build": "handlebars src/views -f public/templates.js"
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "handlebars src/views/ -f dist/templates.js",
+    "start": "node index.js"
   }
 }

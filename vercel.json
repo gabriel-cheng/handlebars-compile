@@ -1,0 +1,18 @@
+{
+    "builds": [
+      {
+        "src": "src/index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "src/views/**/*.handlebars",
+        "use": "handlebars-precompile"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
+  }
