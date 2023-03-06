@@ -4,7 +4,7 @@ const router = require("./router/index.router");
 const path = require("path");
 const app = express();
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + '../../' + '/public'));
 
 app.engine("handlebars", exphbs.engine({
     defaultLayout: "main",
